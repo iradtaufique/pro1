@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-light p-5 rounded">
+    <h1>Employee {{emp_details.emp_name}} Details</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Employee Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{emp_details.emp_name}}" disabled readonly>
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Employee Age</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{emp_details.emp_age}}" disabled readonly>
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Employee Sex</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{emp_details.emp_sex}}" disabled readonly>
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Employee Department</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{emp_details.emp_department}}" disabled readonly>
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Employee Title</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{emp_details.emp_title}}" disabled readonly>
+        </div>
+        <div class="col-6">
+            <label for="exampleFormControlInput1" class="form-label">Employee Salary</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="{{emp_details.emp_salary}}$" disabled readonly>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
